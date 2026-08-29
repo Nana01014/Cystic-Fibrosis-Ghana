@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Involved | CF Foundation Ghana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <img class="mark" src="logo.png" alt="CF Foundation Ghana logo">
+      CF&nbsp;Foundation&nbsp;Ghana
+    </a>
+    <button class="menu-toggle" onclick="document.querySelector('nav.links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about-cf.html">About CF</a>
+      <a href="living-with-cf.html">Living with CF</a>
+      <a href="research.html">Research</a>
+      <a href="community.html">Community</a>
+      <a href="get-involved.html" class="active">Get Involved</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Get involved</p>
+        <h2>Cystic Fibrosis awareness in Ghana grows one supporter at a time</h2>
+        <p>Whether you have five minutes or a professional network, there's a place for you in this work.</p>
+      </div>
+      <div class="involve-grid">
+        <div class="involve-card">
+          <h3>Donate</h3>
+          <p>Support sweat testing access, family resources, and our research partnerships. Every contribution goes directly toward getting CF diagnosed and managed earlier in Ghana.</p>
+          <a class="btn btn-primary" href="contact.html">Get in touch to give</a>
+        </div>
+        <div class="involve-card">
+          <h3>Volunteer</h3>
+          <p>Help with community outreach, translation, event support, or digital content. No medical background required: just time and care.</p>
+          <a class="btn btn-ghost" href="contact.html">Offer your time</a>
+        </div>
+        <div class="involve-card">
+          <h3>Partner with us</h3>
+          <p>We're building relationships with clinicians, laboratories, and researchers who want Ghanaian CFTR data represented in the global picture.</p>
+          <a class="btn btn-ghost" href="contact.html">Start a conversation</a>
+        </div>
+        <div class="involve-card">
+          <h3>Spread the word</h3>
+          <p>Many families affected by CF in Ghana may never have heard the name of the condition their child has. Sharing what CF is could help someone recognize it sooner.</p>
+          <a class="btn btn-ghost" href="about-cf.html">Read the CF basics</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight" style="background:var(--white); border-top:1px solid var(--salt-2); border-bottom:1px solid var(--salt-2);">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">More ways to help</p>
+        <h2 style="font-size:clamp(24px,3vw,32px);">Bring your organization, your event, or your story</h2>
+      </div>
+      <div class="involve-grid">
+        <div class="involve-card">
+          <h3>Host or join a fundraiser</h3>
+          <p>Run a walk, a bake sale, a school event: anything that raises both funds and awareness. We'll help you plan it and share it.</p>
+          <a class="btn btn-ghost" href="contact.html">Propose an event</a>
+        </div>
+        <div class="involve-card">
+          <h3>Corporate partnerships</h3>
+          <p>Sponsor a diagnosis-access program, fund a lab partnership, or make CF part of your company's community health commitment.</p>
+          <a class="btn btn-ghost" href="contact.html">Discuss a partnership</a>
+        </div>
+        <div class="involve-card">
+          <h3>Become an ambassador</h3>
+          <p>Represent CF Foundation Ghana in your community, workplace, or school, helping put a face and a story to a condition most people have never heard named.</p>
+          <a class="btn btn-ghost" href="contact.html">Apply to be an ambassador</a>
+        </div>
+        <div class="involve-card">
+          <h3>Give in someone's honor</h3>
+          <p>Make a gift in memory or celebration of someone affected by CF: a meaningful way to mark a milestone while supporting families like theirs.</p>
+          <a class="btn btn-ghost" href="contact.html">Give a tribute gift</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="fmark" style="display:flex; align-items:center; gap:10px;">
+      <img src="logo.png" alt="" style="width:26px; height:auto; border-radius:6px; background:#fff; padding:2px;">
+      CF Foundation Ghana
+    </span>
+    <span class="fnote">© 2026 CF FOUNDATION GHANA · INSPIRING HOPE</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('nav.links a').forEach(a => {
+    if (a.getAttribute('href') === location.pathname.split('/').pop()) a.classList.add('active');
+  });
+</script>
+
+</body>
+</html>
