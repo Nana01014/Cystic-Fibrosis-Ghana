@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | CF Foundation Ghana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .social-icons{ display:flex; gap:12px; margin-top:6px; }
+  .social-icon{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:38px; height:38px; border-radius:50%;
+    background:var(--salt-2); color:var(--deep);
+    transition:background .2s ease, color .2s ease, transform .2s ease;
+  }
+  .social-icon:hover{ background:var(--deep); color:var(--white); transform:translateY(-2px); }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a href="index.html" class="brand">
+      <img class="mark" src="logo.png" alt="CF Foundation Ghana logo">
+      CF&nbsp;Foundation&nbsp;Ghana
+    </a>
+    <button class="menu-toggle" onclick="document.querySelector('nav.links').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about-cf.html">About CF</a>
+      <a href="living-with-cf.html">Living with CF</a>
+      <a href="research.html">Research</a>
+      <a href="community.html">Community</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section style="padding-top:56px;">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk</h2>
+        <p>Questions, partnership ideas, or a family looking for guidance? Reach out and we'll respond as soon as we can.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact" id="contactForm" onsubmit="submitContact(event)">
+          <input type="hidden" name="access_key" value="270e0625-7421-4682-bc78-9dc74edea008">
+          <input type="hidden" name="subject" value="New message from CF Foundation Ghana website">
+          <input type="hidden" name="from_name" value="CF Foundation Ghana Website">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn" style="align-self:flex-start;">Send message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <div class="contact-info">
+          <div class="info-row">
+            <span class="dot"></span>
+            <div>
+              <h3>Phone</h3>
+              <p>+233 XX XXX XXXX</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="dot"></span>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:cysticfibrosisfoundationgh@gmail.com" class="mail-link">cysticfibrosisfoundationgh@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="dot"></span>
+            <div>
+              <h3>Location</h3>
+              <p>Accra, Ghana</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="dot"></span>
+            <div>
+              <h3>Social</h3>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/company/cystic-fibrosis-foundation-ghana" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1P91fnSRvc/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon" title="Facebook">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34v7.03C18.34 21.24 22 17.08 22 12.06z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/cffoundationgh" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon" title="Instagram">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2c2.72 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.9 1.11 1.15 1.77.25.64.42 1.37.47 2.43.05 1.06.06 1.4.06 4.12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.77 4.9 4.9 0 0 1-1.77 1.15c-.64.25-1.37.42-2.43.47-1.06.05-1.4.06-4.12.06s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.72 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77A4.9 4.9 0 0 1 5.45.53C6.09.28 6.82.11 7.88.06 8.94.01 9.28 0 12 0zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm6.4-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z" transform="translate(0 2)"/></svg>
+                </a>
+                <a href="https://www.threads.com/@cffoundationgh" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="social-icon" title="Threads">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M16.5 11.1c-.1-.1-.3-.1-.4-.2-.2-2.7-1.7-4.3-4.3-4.3-1.5 0-2.7.6-3.5 1.8l1.4.9c.6-.9 1.4-1.1 2.1-1.1 1.4 0 2.1.7 2.4 1.9-.6-.1-1.2-.2-1.9-.2-2.4 0-4.1 1.2-4.1 3.1 0 1.7 1.4 2.9 3.5 2.9 1.7 0 2.9-.7 3.6-2 .5.6.7 1.4.7 2.4h1.7c0-1.4-.4-2.5-1.2-3.4.4-.6.6-1.3.6-2.1 0-.2 0-.4-.1-.6zm-4.9 4.7c-1.1 0-1.8-.5-1.8-1.3 0-.9 1-1.4 2.4-1.4.6 0 1.1.1 1.6.2-.2 1.6-1 2.5-2.2 2.5zM12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10z"/></svg>
+                </a>
+                <a href="https://x.com/cffoundationgh" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="social-icon" title="X">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.8l-5.3-6.9L5 22H1.9l8.1-9.3L1 2h7l4.8 6.3L18.9 2zm-1.2 18h1.9L7.4 4h-2l12.3 16z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="fmark" style="display:flex; align-items:center; gap:10px;">
+      <img src="logo.png" alt="" style="width:26px; height:auto; border-radius:6px; background:#fff; padding:2px;">
+      CF Foundation Ghana
+    </span>
+    <span class="fnote">© 2026 CF FOUNDATION GHANA · INSPIRING HOPE</span>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('nav.links a').forEach(a => {
+    if (a.getAttribute('href') === location.pathname.split('/').pop()) a.classList.add('active');
+  });
+</script>
+<script>
+  async function submitContact(e){
+    e.preventDefault();
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    const btn = document.getElementById('submitBtn');
+
+    btn.disabled = true;
+    btn.textContent = "Sending...";
+    status.textContent = "";
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const result = await res.json();
+
+      if (result.success) {
+        status.textContent = "Thanks! Your message has been sent. We'll get back to you soon.";
+        form.reset();
+      } else {
+        status.textContent = "Something went wrong sending your message. Please try emailing us directly.";
+      }
+    } catch (err) {
+      status.textContent = "Something went wrong sending your message. Please try emailing us directly.";
+    }
+
+    btn.disabled = false;
+    btn.textContent = "Send message";
+  }
+</script>
+</body>
+</html>
